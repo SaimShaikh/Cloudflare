@@ -139,6 +139,8 @@ active (running)
 
 # ☁️ Step 6 — Add Domain to Cloudflare
 
+<img width="1866" height="811" alt="Screenshot (2134)" src="https://github.com/user-attachments/assets/0f4a9d8d-4b42-4a3d-b0e1-21fe670b6842" />
+
 Login to Cloudflare.
 
 Add your domain:
@@ -154,6 +156,7 @@ Cloudflare provides nameservers like:
 <Your DNS Name>.com
 ```
 
+<img width="1890" height="860" alt="Screenshot (2135)" src="https://github.com/user-attachments/assets/93a74611-84e4-44a0-ab90-210736af143b" />
 
 **after this wait 5 min**
 
@@ -169,6 +172,8 @@ Example:
 * Hostinger
 * GoDaddy
 * Namecheap
+<img width="1881" height="880" alt="Screenshot (2136)" src="https://github.com/user-attachments/assets/a3ee08e4-b9d0-42b6-a147-6bf361b9a280" />
+
 
 Replace old nameservers with Cloudflare nameservers.
 
@@ -183,6 +188,7 @@ In Cloudflare dashboard:
 ```text
 Domain Status → Active
 ```
+<img width="1886" height="828" alt="Screenshot (2138)" src="https://github.com/user-attachments/assets/0a9016d8-cdd1-4306-b3c0-8897a4a39f8d" />
 
 ---
 
@@ -211,6 +217,7 @@ cloudflared --version
 # 🔐 Step 12 — Authenticate Cloudflare Tunnel
 
 Run:
+<img width="1890" height="822" alt="Screenshot (2139)" src="https://github.com/user-attachments/assets/c83ba327-6265-45d1-a862-9fc6081abb02" />
 
 ```bash
 cloudflared tunnel login
@@ -223,10 +230,16 @@ Login with Cloudflare account.
 Select your domain.
 
 Successful login creates:
+<img width="1876" height="871" alt="Screenshot (2140)" src="https://github.com/user-attachments/assets/2d832cc2-4273-4b98-9f89-32e05af388d0" />
+
+
 
 ```text
 /home/ubuntu/.cloudflared/cert.pem
 ```
+<img width="1908" height="800" alt="Screenshot (2141)" src="https://github.com/user-attachments/assets/eaabd7f1-7336-4d5c-9f2d-a52c9a8b80de" />
+
+
 
 ---
 
@@ -237,6 +250,7 @@ Create tunnel:
 ```bash
 cloudflared tunnel create prod-tunnel
 ```
+<img width="1875" height="962" alt="Screenshot (2143)" src="https://github.com/user-attachments/assets/bff70e6d-b89f-46da-b6e9-597397d9be98" />
 
 Example output:
 
@@ -250,10 +264,13 @@ Credentials file created:
 ```text
 /home/ubuntu/.cloudflared/TUNNEL_ID.json
 ```
+<img width="1898" height="953" alt="Screenshot (2144)" src="https://github.com/user-attachments/assets/d24c4ef3-abb2-43cb-b91f-1fa58c09803f" />
 
 ---
 
 # 🌐 Step 14 — Create DNS Route
+<img width="1900" height="953" alt="Screenshot (2146)" src="https://github.com/user-attachments/assets/d4ae4ffe-0159-42f2-8c91-b94c3897cb51" />
+
 
 IMPORTANT:
 
@@ -325,6 +342,8 @@ Registered tunnel connection
 ---
 
 # 🌍 Step 17 — Access Website
+<img width="1651" height="915" alt="Screenshot (2145)" src="https://github.com/user-attachments/assets/16efc69c-2439-47f3-bf75-9b00ae7be723" />
+
 
 Open browser:
 
