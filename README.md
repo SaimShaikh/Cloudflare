@@ -166,8 +166,8 @@ Cloudflare provides nameservers like:
 
 ---
 
-<img width="1881" height="880" alt="Screenshot (2136)" src="https://github.com/user-attachments/assets/a3ee08e4-b9d0-42b6-a147-6bf361b9a280" />
 
+<img width="1881" height="880" alt="image" src="https://github.com/user-attachments/assets/986d56ee-9214-4c78-87ba-70d0dc080e7e" />
 
 
 
