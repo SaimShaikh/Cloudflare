@@ -292,12 +292,15 @@ Credentials file created:
 ```text
 /home/ubuntu/.cloudflared/TUNNEL_ID.json
 ```
-<img width="1898" height="953" alt="Screenshot (2144)" src="https://github.com/user-attachments/assets/d24c4ef3-abb2-43cb-b91f-1fa58c09803f" />
+
+
+<img width="1898" height="953" alt="590097657-d24c4ef3-abb2-43cb-b91f-1fa58c09803f" src="https://github.com/user-attachments/assets/4ba72f4d-90db-4f95-a38b-0278fca4d80e" />
+
 
 ---
 
 # 🌐 Step 14 — Create DNS Route
-<img width="1900" height="953" alt="Screenshot (2146)" src="https://github.com/user-attachments/assets/d4ae4ffe-0159-42f2-8c91-b94c3897cb51" />
+
 
 
 IMPORTANT:
@@ -321,6 +324,7 @@ Successful output:
 ```text
 Added CNAME app.Your Doamin
 ```
+<img width="849" height="335" alt="590097723-d4ae4ffe-0159-42f2-8c91-b94c3897cb51" src="https://github.com/user-attachments/assets/bbc95987-7cb4-4aca-b672-7337c23839fc" />
 
 ---
 
@@ -381,71 +385,7 @@ https://app.Your Doamin
 
 Website should load successfully.
 
----
 
-# 🔒 Security Benefits
 
-| Traditional Hosting    | Cloudflare Tunnel    |
-| ---------------------- | -------------------- |
-| Open public ports      | No inbound ports     |
-| Public server exposure | Hidden origin IP     |
-| Manual SSL setup       | Automatic HTTPS      |
-| Direct attack surface  | Cloudflare protected |
 
----
 
-# 📚 Key Concepts Learned
-
-During this project:
-
-* AWS EC2
-* Linux Administration
-* Nginx Configuration
-* DNS Management
-* Cloudflare Tunnel
-* Reverse Proxy Concepts
-* Secure Networking
-* Production Architecture
-* HTTPS Routing
-
----
-
-# 📈 Future Improvements
-
-Possible enhancements:
-
-* Grafana Monitoring
-* Prometheus Metrics
-* Docker Integration
-* Kubernetes Deployment
-* Zero Trust Authentication
-* CI/CD Integration
-* WAF Rules
-* Rate Limiting
-
----
-
-# 🧠 Conclusion
-
-This project demonstrates a modern and secure way to expose applications publicly without directly exposing server ports.
-
-Instead of:
-
-```text
-Internet → Open Ports → Server
-```
-
-we use:
-
-```text
-Server → Secure Tunnel → Cloudflare
-```
-
-This approach improves:
-
-* Security
-* Scalability
-* Maintainability
-* Production readiness
-
-A strong practical project for DevOps and Cloud Engineering 🚀
