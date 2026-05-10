@@ -160,7 +160,9 @@ Cloudflare provides nameservers like:
 <Your DNS Name>.com
 ```
 
-<img width="1890" height="860" alt="Screenshot (2135)" src="https://github.com/user-attachments/assets/93a74611-84e4-44a0-ab90-210736af143b" />
+
+
+<img width="1890" height="860" alt="image" src="https://github.com/user-attachments/assets/7db2644e-5995-45d2-8584-0748079e3024" />
 
 ---
 
