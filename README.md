@@ -199,7 +199,9 @@ In Cloudflare dashboard:
 ```text
 Domain Status → Active
 ```
-<img width="1886" height="828" alt="Screenshot (2138)" src="https://github.com/user-attachments/assets/0a9016d8-cdd1-4306-b3c0-8897a4a39f8d" />
+
+
+<img width="1886" height="828" alt="image" src="https://github.com/user-attachments/assets/876510ee-2ffa-4a90-abf1-68f96975dda2" />
 
 **or check using dig NS <Your Doamin Name>**
 
