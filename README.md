@@ -238,6 +238,11 @@ Run:
 ```bash
 cloudflared tunnel login
 ```
+
+<img width="827" height="47" alt="590097620-bff70e6d-b89f-46da-b6e9-597397d9be98" src="https://github.com/user-attachments/assets/25c584d1-9908-4241-aa50-56de0a4357d2" />
+
+---
+
 <img width="1890" height="822" alt="Screenshot (2139)" src="https://github.com/user-attachments/assets/c83ba327-6265-45d1-a862-9fc6081abb02" />
 
 **It will Provide Your URL Open That into web browser to authorise**
