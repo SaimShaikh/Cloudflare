@@ -21,19 +21,8 @@ This project demonstrates how to:
 
 # 🏗️ Architecture
 
-```text
-Internet
-   ↓
-Cloudflare Edge
-   ↓
-Cloudflare Tunnel
-   ↓
-AWS EC2 Ubuntu Server
-   ↓
-Nginx Web Server
-   ↓
-Local Application
-```
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/08e15ca7-f739-4f65-a10d-872f6aa3bbb6" />
+
 
 ---
 
@@ -59,6 +48,8 @@ Before starting:
 * Domain Name
 * SSH Client
 * Basic Linux Knowledge
+* Nginx 
+
 
 ---
 
