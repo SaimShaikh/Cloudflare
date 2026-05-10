@@ -71,30 +71,8 @@ Cloudflare hides your origin server and filters malicious traffic before it reac
 
 ## Architecture Flow
 
-```text
-                 ┌─────────────────────┐
-                 │     End Users       │
-                 └─────────┬───────────┘
-                           │
-                           ▼
-               ┌───────────────────────┐
-               │      Cloudflare       │
-               │  CDN + Security Edge  │
-               └─────────┬─────────────┘
-                         │
-        ┌────────────────┼────────────────┐
-        │                │                │
-        ▼                ▼                ▼
-   WAF Filtering     DDoS Protection    Caching
-        │                │                │
-        └────────────────┼────────────────┘
-                         │
-                         ▼
-                ┌────────────────┐
-                │ Origin Server  │
-                │ AWS / VPS / VM │
-                └────────────────┘
-```
+<img width="1195" height="1316" alt="image" src="https://github.com/user-attachments/assets/54018963-cf86-4436-b1f8-c7293d368b43" />
+
 
 ---
 
