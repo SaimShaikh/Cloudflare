@@ -256,7 +256,8 @@ Successful login creates:
 
 ---
 
-<img width="1908" height="800" alt="Screenshot (2141)" src="https://github.com/user-attachments/assets/eaabd7f1-7336-4d5c-9f2d-a52c9a8b80de" />
+
+<img width="954" height="400" alt="590097443-eaabd7f1-7336-4d5c-9f2d-a52c9a8b80de" src="https://github.com/user-attachments/assets/1cb0c8ba-cbd4-4190-8e10-f906e8cc5602" />
 
 **It will Download certificate on this location**
 ```text
