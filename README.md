@@ -276,13 +276,15 @@ Create tunnel:
 ```bash
 cloudflared tunnel create <Tunnel Name >
 ```
-<img width="1875" height="962" alt="Screenshot (2143)" src="https://github.com/user-attachments/assets/bff70e6d-b89f-46da-b6e9-597397d9be98" />
+
+
+<img width="1875" height="139" alt="590097620-bff70e6d-b89f-46da-b6e9-597397d9be98 (1)" src="https://github.com/user-attachments/assets/96664cb2-fb8b-4903-9cc5-374fe25fc814" />
 
 Example output:
 
 ```text
 Created tunnel prod-tunnel with id:
-fb4b1406-fc69-4410-8f12-ebef478eb529
+<Tunnel ID Number>
 ```
 
 Credentials file created:
