@@ -1,22 +1,5 @@
 # 🚀 Production Ready Cloudflare Tunnel Setup on AWS EC2
 
-A complete hands-on practical implementation of secure application exposure using Cloudflare Tunnel, Nginx, and AWS EC2.
-
----
-
-# 📌 Project Overview
-
-This project demonstrates how to:
-
-* Launch AWS EC2 Ubuntu Server
-* Configure Security Groups
-* Install Nginx Web Server
-* Install and Configure Cloudflare Tunnel
-* Securely expose localhost applications to the internet
-* Avoid opening public inbound ports
-* Configure DNS routing using Cloudflare
-* Build production-style secure architecture
-
 ---
 
 # 🏗️ Architecture
