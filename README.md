@@ -103,40 +103,7 @@ sudo apt install curl wget unzip nano -y
 
 ---
 
-# 📁 Step 5 — Create Sample Application
-
-Create directory:
-
-```bash
-mkdir mysite
-cd mysite
-```
-
-Create HTML page:
-
-```bash
-nano index.html
-```
-
-Add:
-
-```html
-<h1>Cloudflare Tunnel Working</h1>
-
-<p>Hello from EC2 localhost application</p>
-```
-
-Save:
-
-```text
-CTRL + O
-ENTER
-CTRL + X
-```
-
----
-
-# 🌐 Step 6 — Install Nginx
+# 🌐 Step 5 — Install Nginx
 
 Install:
 
@@ -170,41 +137,7 @@ active (running)
 
 ---
 
-# 📂 Step 7 — Configure Nginx Website
-
-Remove default HTML:
-
-```bash
-sudo rm -rf /var/www/html/*
-```
-
-Copy application files:
-
-```bash
-sudo cp ~/mysite/index.html /var/www/html/
-```
-
-Restart Nginx:
-
-```bash
-sudo systemctl restart nginx
-```
-
-Test locally:
-
-```bash
-curl localhost
-```
-
-Expected output:
-
-```html
-<h1>Cloudflare Tunnel Working</h1>
-```
-
----
-
-# ☁️ Step 8 — Add Domain to Cloudflare
+# ☁️ Step 6 — Add Domain to Cloudflare
 
 Login to Cloudflare.
 
@@ -217,10 +150,12 @@ demodomain.fun
 Cloudflare provides nameservers like:
 
 ```text
-marge.ns.cloudflare.com
-rex.ns.cloudflare.com
+<Your DNS Name>.com
+<Your DNS Name>.com
 ```
 
+
+**after this wait 5 min**
 ---
 
 # 🌍 Step 9 — Update Nameservers in Domain Provider
