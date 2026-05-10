@@ -15,19 +15,8 @@ The setup securely exposes Grafana and Prometheus dashboards without opening mon
 
 # Architecture
 
-```text
-Browser
-   │
-Cloudflare DNS
-   │
-Cloudflare Tunnel
-   │
-Nginx Reverse Proxy
-   │
-────────────────────
-│                  │
-Grafana        Prometheus
-```
+<img width="1207" height="1303" alt="image" src="https://github.com/user-attachments/assets/38d3c100-d198-4add-9dac-1dff5e95e619" />
+
 
 ---
 
