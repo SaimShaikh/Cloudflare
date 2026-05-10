@@ -156,9 +156,11 @@ Cloudflare provides nameservers like:
 
 
 **after this wait 5 min**
+
+
 ---
 
-# 🌍 Step 9 — Update Nameservers in Domain Provider
+# 🌍 Step 7 — Update Nameservers in Domain Provider
 
 Go to your domain provider.
 
