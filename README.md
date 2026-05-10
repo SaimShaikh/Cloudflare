@@ -71,9 +71,6 @@ DO NOT OPEN:
 ```text
 80
 443
-3000
-8080
-9090
 ```
 
 Cloudflare Tunnel handles public traffic securely.
