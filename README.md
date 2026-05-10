@@ -134,7 +134,30 @@ Expected:
 ```text
 active (running)
 ```
+ **And Also Install systemd**
 
+```bash
+# Install systemd service
+sudo cloudflared service install
+
+```
+
+```bash
+# Start tunnel service
+sudo systemctl start cloudflared
+```
+
+```bash
+# Enable auto start after reboot
+sudo systemctl enable cloudflared
+```
+
+
+```bash
+# Check status
+sudo systemctl status cloudflared
+```
+ 
 ---
 
 # ☁️ Step 6 — Add Domain to Cloudflare
@@ -357,12 +380,12 @@ Replace:
 
 ---
 
-# ▶️ Step 16 — Run Tunnel
+# ▶️ Step 16 — Run Tunnel in Background Because If Machine Restart Tunnel will expire 
 
 Start tunnel:
 
 ```bash
-cloudflared tunnel run <Your Tunnel Name>
+nohup cloudflared tunnel run <Your Tunnel Name> > tunnel.log 2>&1 &
 ```
 
 Successful logs:
