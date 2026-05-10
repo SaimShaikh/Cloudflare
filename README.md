@@ -139,15 +139,19 @@ active (running)
 
 # ☁️ Step 6 — Add Domain to Cloudflare
 
-<img width="1866" height="811" alt="Screenshot (2134)" src="https://github.com/user-attachments/assets/0f4a9d8d-4b42-4a3d-b0e1-21fe670b6842" />
-
 Login to Cloudflare.
+
+**Path : CloudFlare > Dashboard > Domain > Add Domain** 
+
+<img width="1866" height="811" alt="image" src="https://github.com/user-attachments/assets/f6944159-331a-4171-881e-94d9ebd8b534" />
+
 
 Add your domain:
 
 ```text
-demodomain.fun
+Add Your Doamin
 ```
+**After This Click on Import DNS Records**
 
 Cloudflare provides nameservers like:
 
@@ -158,7 +162,11 @@ Cloudflare provides nameservers like:
 
 <img width="1890" height="860" alt="Screenshot (2135)" src="https://github.com/user-attachments/assets/93a74611-84e4-44a0-ab90-210736af143b" />
 
-**after this wait 5 min**
+---
+
+<img width="1881" height="880" alt="Screenshot (2136)" src="https://github.com/user-attachments/assets/a3ee08e4-b9d0-42b6-a147-6bf361b9a280" />
+
+
 
 
 ---
@@ -172,12 +180,13 @@ Example:
 * Hostinger
 * GoDaddy
 * Namecheap
-<img width="1881" height="880" alt="Screenshot (2136)" src="https://github.com/user-attachments/assets/a3ee08e4-b9d0-42b6-a147-6bf361b9a280" />
-
 
 Replace old nameservers with Cloudflare nameservers.
+<img width="3145" height="1665" alt="image" src="https://github.com/user-attachments/assets/0f49a023-df13-45b6-8bfc-3bdd35845b3d" />
 
-Wait for DNS propagation.
+**after this wait 5 min** 
+
+
 
 ---
 
@@ -189,6 +198,10 @@ In Cloudflare dashboard:
 Domain Status → Active
 ```
 <img width="1886" height="828" alt="Screenshot (2138)" src="https://github.com/user-attachments/assets/0a9016d8-cdd1-4306-b3c0-8897a4a39f8d" />
+
+**or check using dig NS <Your Doamin Name>**
+
+<img width="2419" height="1310" alt="image" src="https://github.com/user-attachments/assets/5e062632-51f4-473f-af53-522c77f9de29" />
 
 ---
 
@@ -217,27 +230,29 @@ cloudflared --version
 # 🔐 Step 12 — Authenticate Cloudflare Tunnel
 
 Run:
-<img width="1890" height="822" alt="Screenshot (2139)" src="https://github.com/user-attachments/assets/c83ba327-6265-45d1-a862-9fc6081abb02" />
 
 ```bash
 cloudflared tunnel login
 ```
+<img width="1890" height="822" alt="Screenshot (2139)" src="https://github.com/user-attachments/assets/c83ba327-6265-45d1-a862-9fc6081abb02" />
 
-Browser opens automatically.
+**It will Provide Your URL Open That into web browser to authorise**
 
-Login with Cloudflare account.
-
-Select your domain.
+Select your domain and Click On Authorise.
 
 Successful login creates:
+
 <img width="1876" height="871" alt="Screenshot (2140)" src="https://github.com/user-attachments/assets/2d832cc2-4273-4b98-9f89-32e05af388d0" />
 
+---
 
+<img width="1908" height="800" alt="Screenshot (2141)" src="https://github.com/user-attachments/assets/eaabd7f1-7336-4d5c-9f2d-a52c9a8b80de" />
 
+**It will Download certificate on this location**
 ```text
 /home/ubuntu/.cloudflared/cert.pem
 ```
-<img width="1908" height="800" alt="Screenshot (2141)" src="https://github.com/user-attachments/assets/eaabd7f1-7336-4d5c-9f2d-a52c9a8b80de" />
+
 
 
 
@@ -248,7 +263,7 @@ Successful login creates:
 Create tunnel:
 
 ```bash
-cloudflared tunnel create prod-tunnel
+cloudflared tunnel create <Tunnel Name >
 ```
 <img width="1875" height="962" alt="Screenshot (2143)" src="https://github.com/user-attachments/assets/bff70e6d-b89f-46da-b6e9-597397d9be98" />
 
@@ -279,19 +294,19 @@ Root domain may already contain DNS records.
 Wrong:
 
 ```bash
-cloudflared tunnel route dns prod-tunnel demodomain.fun
+cloudflared tunnel route dns prod-tunnel <Your Doamin>
 ```
 
 Correct:
 
 ```bash
-cloudflared tunnel route dns prod-tunnel app.demodomain.fun
+cloudflared tunnel route dns prod-tunnel <app.Your Doamin>
 ```
 
 Successful output:
 
 ```text
-Added CNAME app.demodomain.fun
+Added CNAME app.Your Doamin
 ```
 
 ---
@@ -312,7 +327,7 @@ tunnel: YOUR_TUNNEL_ID
 credentials-file: /home/ubuntu/.cloudflared/YOUR_TUNNEL_ID.json
 
 ingress:
-  - hostname: app.demodomain.fun
+  - hostname: app.Your Doamin
     service: http://localhost:80
 
   - service: http_status:404
@@ -330,7 +345,7 @@ Replace:
 Start tunnel:
 
 ```bash
-cloudflared tunnel run prod-tunnel
+cloudflared tunnel run <Your Tunnel Name>
 ```
 
 Successful logs:
@@ -348,7 +363,7 @@ Registered tunnel connection
 Open browser:
 
 ```text
-https://app.demodomain.fun
+https://app.Your Doamin
 ```
 
 Website should load successfully.
