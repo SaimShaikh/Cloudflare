@@ -243,7 +243,8 @@ cloudflared tunnel login
 
 ---
 
-<img width="1890" height="822" alt="Screenshot (2139)" src="https://github.com/user-attachments/assets/c83ba327-6265-45d1-a862-9fc6081abb02" />
+<img width="945" height="411" alt="590097288-c83ba327-6265-45d1-a862-9fc6081abb02" src="https://github.com/user-attachments/assets/6125d568-21d3-41a6-872c-e318ba2179d0" />
+
 
 **It will Provide Your URL Open That into web browser to authorise**
 
